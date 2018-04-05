@@ -1,16 +1,64 @@
 {
-    "extends" : ["rallycoding"],
-    "rules" : {
-        "arrow-body-style": 0,
-        "max-len": 0,
-        "no-nested-ternary": 0,
-        "no-underscore-dangle": 0,
-        "prefer-template": 0,
-        "global-require": 0,
-        "import/no-unresolved": 0,
-        "import/no-extraneous-dependencies": 0,
-        "key-spacing": 0,
-        "camelcase": 0,
-        "padded-blocks": 0
-    }
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 7,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"modules": true,
+			"experimentalObjectRestSpread": true
+		}
+	},
+	"plugins": [
+		"import"
+	],
+	"extends" : [
+		"eslint:recommended"
+	],
+	"env": {
+		"es6": true,
+		"node": true,
+		"browser": true
+	},
+	"rules" : {
+		"no-empty-pattern": ["off"],
+		"no-console": ["off"],
+		"camelcase": ["warn"],
+		"arrow-body-style": ["error"],
+		"no-unused-vars": ["error"],
+		"semi" : ["error"],
+		"no-unneeded-ternary": ["error"],
+		"no-nested-ternary": ["off"],
+		"prefer-template": ["error"],
+		"global-require": ["error"],
+		"curly" : ["error", "multi-or-nest"],
+		"jsx-quotes": ["error"],
+		"indent": ["error", "tab", { "SwitchCase" : 1 }],
+		"brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+		"space-before-function-paren": ["error", "never"],
+		"space-unary-ops": ["error"],
+		"keyword-spacing": ["error"],
+		"object-curly-spacing": ["error", "always"],
+		"object-property-newline": ["error", { "allowAllPropertiesOnSameLine": true }],
+		"object-curly-newline": ["error", { "consistent": true }],
+		"object-shorthand": ["error"],
+		"template-curly-spacing": ["error", "never"],
+		"semi-spacing": ["error"],
+		"arrow-spacing": ["error"],
+		"prefer-const": ["error"],
+		"padded-blocks": ["error", "never"],
+		"space-in-parens": ["error"],
+		"space-before-blocks": ["error"],
+		"no-multi-spaces": ["error"],
+		"no-multiple-empty-lines": ["error", { "max" : 1 }],
+		"max-len": ["warn", { "code": 150 } ],
+		"key-spacing": ["error", { "beforeColon": true, "align": "colon" }],
+		"comma-spacing": ["error"],
+		"quote-props": ["error", "as-needed"],
+		"quotes": ["error", "single", { "avoidEscape": true }],
+		"array-bracket-spacing": ["error"],
+		"import/no-named-as-default": ["off"],
+		"import/no-named-as-default-member": ["off"],
+		"import/prefer-default-export": ["off"],
+		"import/extensions": ["error", { "svg": "always" }]
+	}
 }

@@ -1,4 +1,4 @@
-const Deck = require('./src/Deck');
+import Deck from './src/Deck';
 
 const deck = new Deck();
 
