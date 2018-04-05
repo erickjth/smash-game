@@ -1,11 +1,11 @@
 # Smash Game
 
 - Run `yarn install`
-- Run `yarn build:server`
-- Run `yarn run:server`
 
+## Release
+- Run `yarn build`
+- Run `yarn run`
 
-## For Development
-- Run `yarn install`
-- Run `yarn start:server`
+## Development
+- Run `yarn start`
 - Run `yarn serve`

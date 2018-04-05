@@ -2,13 +2,13 @@
   "name": "smash",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build:server": "npm run clean && babel server -d dist/server",
-    "start:server": "npm run clean && babel server -w -d dist/server",
-    "run:server": "node ./dist/server",
-    "serve": "nodemon ./dist/server",
-    "clean": "rm -rf dist"
+    "build": "npm run clean && babel server -d dist",
+    "start": "npm run clean && babel server -w -d dist",
+    "serve": "nodemon ./dist",
+    "clean": "rm -rf dist",
+    "run": "node ./dist"
   },
   "author": "",
   "license": "ISC",
@@ -18,15 +18,10 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.2",
-    "babel-plugin-jsx-control-statements": "^3.2.8",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^4.19.1",
     "eslint-plugin-import": "^2.10.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-jsx-control-statements": "^2.2.0",
-    "eslint-plugin-react": "^7.7.0",
     "nodemon": "^1.17.3"
   }
 }
